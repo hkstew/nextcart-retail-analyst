@@ -8,11 +8,11 @@ storytelling, customer segmentation, and business recommendations.
 [![Pandas](https://img.shields.io/badge/Pandas-Data%20Wrangling-150458?logo=pandas&logoColor=white)](https://pandas.pydata.org/)
 [![Status](https://img.shields.io/badge/Status-Complete-success)]()
 
-> [View the interactive dashboard](dashboard.html)** · [View the full analysis notebook](notebooks/NextCart_Sales_Analysis.ipynb)**
+>**[View the interactive dashboard](dashboard.html)** · **[View the full analysis notebook](notebooks/NextCart_Sales_Analysis.ipynb)**
 
 ---
 
-Business Problem
+## Business Problem
 
 NextCart is a (fictional) Thailand-based online retailer selling Electronics, Fashion, Home &
 Living, Beauty, and Office Supplies products nationwide. Leadership needs to understand:
@@ -33,7 +33,7 @@ analysis → visualization → customer segmentation → business recommendation
 
 ---
 
-Preview
+## Preview
 
 <table>
 <tr>
@@ -48,7 +48,7 @@ Preview
 
 ---
 
-Key Findings
+## Key Findings
 
 | Finding | Detail |
 |---|---|
@@ -63,7 +63,7 @@ notebook](notebooks/NextCart_Sales_Analysis.ipynb).
 
 ---
 
-Methodology & Tech Stack
+## Methodology & Tech Stack
 
 | Stage | Tools | What it demonstrates |
 |---|---|---|
@@ -76,7 +76,7 @@ Methodology & Tech Stack
 
 ---
 
-Repository Structure
+## Repository Structure
 
 ```
 nextcart-retail-analysis/
@@ -105,7 +105,7 @@ nextcart-retail-analysis/
 
 ---
 
-How to Reproduce
+## How to Reproduce
 
 ```bash
 git clone https://github.com/<your-username>/nextcart-retail-analysis.git
@@ -125,7 +125,7 @@ To explore interactively, open [`dashboard.html`](dashboard.html) directly in an
 
 ---
 
-About
+## About
 
 Built as a portfolio project to demonstrate an end-to-end Data/Business Analyst workflow:
 problem framing, data cleaning, SQL, visualization, segmentation, and — most importantly —
