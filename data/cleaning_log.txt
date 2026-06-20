@@ -1,0 +1,11 @@
+NextCart Sales Data — Cleaning Log
+========================================
+- Starting rows: 4263
+- Unparseable dates dropped: 0
+- Standardized casing/whitespace in: Region, Category, Segment, Ship Mode
+- Duplicate rows removed: 63
+- Invalid (negative) Quantity rows removed: 8
+- Missing Discount values imputed as 0: 168
+- Missing Profit values imputed using category-average margin: 126
+- Final rows: 4192
+- Final columns: ['Order ID', 'Order Date', 'Customer ID', 'Customer Name', 'Segment', 'Region', 'Category', 'Product Name', 'Quantity', 'Discount', 'Sales', 'Profit', 'Ship Mode']

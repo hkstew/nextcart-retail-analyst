@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>NextCart — Sales Performance Report</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{
+    --ink:#1B1F3B;
+    --paper:#F6F4EF;
+    --paper-line:#E4E0D6;
+    --brand:#1D7A6F;
+    --brand-soft:#E4F0EE;
+    --warn:#D9772E;
+    --warn-soft:#FBEADB;
+    --danger:#B33A3A;
+    --danger-soft:#F7E3E1;
+    --muted:#8B8D98;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Inter',sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:980px;margin:0 auto;padding:0 20px 60px;}
+
+  /* ---- Receipt header ---- */
+  .receipt-head{
+    background:var(--ink);
+    color:var(--paper);
+    padding:34px 36px 26px;
+    margin:0 -1px;
+    position:relative;
+  }
+  .receipt-head::after{
+    content:"";
+    position:absolute;left:0;right:0;bottom:-11px;height:22px;
+    background:
+      linear-gradient(135deg, var(--ink) 50%, transparent 50%) 0 0/16px 22px repeat-x,
+      linear-gradient(-135deg, var(--ink) 50%, transparent 50%) 0 0/16px 22px repeat-x;
+    background-position: 0 0, 8px 0;
+  }
+  .store-row{display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:14px;}
+  .store-name{
+    font-family:'Oswald',sans-serif;
+    font-weight:700;
+    font-size:30px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+  }
+  .store-sub{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:11.5px;
+    letter-spacing:1.5px;
+    color:#B9C2BF;
+    text-transform:uppercase;
+    margin-top:4px;
+  }
+  .barcode{display:flex;gap:2px;align-items:flex-end;height:32px;}
+  .barcode span{display:block;background:var(--paper);}
+  .receipt-meta{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:11.5px;
+    color:#B9C2BF;
+    margin-top:18px;
+    display:flex;
+    gap:24px;
+    flex-wrap:wrap;
+  }
+  .receipt-meta span{margin-right:24px;}
+  .receipt-meta span:last-child{margin-right:0;}
+
+  /* ---- KPI line items ---- */
+  .kpi-block{padding:30px 0 8px;}
+  .kpi-row{
+    display:flex;justify-content:space-between;align-items:baseline;
+    padding:11px 0;
+    border-bottom:1.5px dotted var(--paper-line);
+    font-family:'IBM Plex Mono',monospace;
+  }
+  .kpi-label{font-size:13px;letter-spacing:0.5px;color:var(--muted);text-transform:uppercase;}
+  .kpi-value{font-size:19px;font-weight:600;color:var(--ink);}
+  .kpi-value.brand{color:var(--brand);}
+  .kpi-value.warn{color:var(--warn);}
+
+  /* ---- Tabs ---- */
+  .tabs{display:flex;gap:6px;margin:34px 0 18px;flex-wrap:wrap;}
+  .tab-btn{
+    font-family:'Oswald',sans-serif;
+    font-size:13px;letter-spacing:1px;text-transform:uppercase;
+    background:transparent;border:1.5px solid var(--ink);color:var(--ink);
+    padding:9px 16px;cursor:pointer;border-radius:2px;
+    transition:background .15s, color .15s;
+  }
+  .tab-btn.active{background:var(--ink);color:var(--paper);}
+  .tab-btn:hover:not(.active){background:var(--paper-line);}
+
+  .panel{display:none;}
+  .panel.active{display:block;animation:fade .25s ease;}
+  @keyframes fade{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+
+  .card{
+    background:#fff;
+    border:1px solid var(--paper-line);
+    border-radius:3px;
+    padding:22px 22px 14px;
+    margin-bottom:20px;
+  }
+  .card h3{
+    font-family:'Oswald',sans-serif;
+    font-size:15px;letter-spacing:0.5px;text-transform:uppercase;
+    margin:0 0 4px;font-weight:600;
+  }
+  .card p.note{
+    font-size:13px;color:var(--muted);margin:0 0 16px;line-height:1.5;
+  }
+  .chart-box{position:relative;height:280px;}
+  .chart-box.tall{height:320px;}
+
+  /* ---- Insight callout ---- */
+  .insight{
+    background:var(--warn-soft);
+    border-left:4px solid var(--warn);
+    padding:16px 18px;
+    margin:4px 0 22px;
+    border-radius:0 3px 3px 0;
+  }
+  .insight .eyebrow{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:11px;letter-spacing:1.5px;text-transform:uppercase;
+    color:var(--warn);font-weight:600;margin-bottom:6px;
+  }
+  .insight p{margin:0;font-size:14px;line-height:1.55;}
+
+  /* ---- Receipt table ---- */
+  table.receipt-table{width:100%;border-collapse:collapse;font-family:'IBM Plex Mono',monospace;font-size:12.5px;}
+  table.receipt-table th{
+    text-align:left;text-transform:uppercase;letter-spacing:0.5px;
+    font-size:10.5px;color:var(--muted);padding:6px 6px 8px;
+    border-bottom:1.5px solid var(--ink);
+  }
+  table.receipt-table td{padding:8px 6px;border-bottom:1px dotted var(--paper-line);}
+  table.receipt-table tr:last-child td{border-bottom:none;}
+  table.receipt-table td.num{text-align:right;}
+  .seg-tag{
+    display:inline-block;padding:2px 8px;border-radius:10px;font-size:10.5px;
+    font-family:'Inter',sans-serif;font-weight:600;
+  }
+
+  /* ---- Footer ---- */
+  .receipt-foot{
+    text-align:center;font-family:'IBM Plex Mono',monospace;font-size:11px;
+    color:var(--muted);margin-top:28px;letter-spacing:1px;
+  }
+  .receipt-foot .stars{letter-spacing:6px;margin-bottom:8px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="receipt-head">
+    <div class="store-row">
+      <div>
+        <div class="store-name">NextCart</div>
+        <div class="store-sub">Retail Analytics &middot; Sales Performance Report</div>
+      </div>
+      <div class="barcode" aria-hidden="true">
+        <span style="width:2px;height:32px"></span><span style="width:1px;height:24px"></span>
+        <span style="width:3px;height:32px"></span><span style="width:1px;height:18px"></span>
+        <span style="width:2px;height:32px"></span><span style="width:1px;height:26px"></span>
+        <span style="width:2px;height:32px"></span><span style="width:3px;height:20px"></span>
+        <span style="width:1px;height:32px"></span><span style="width:2px;height:30px"></span>
+        <span style="width:1px;height:22px"></span><span style="width:2px;height:32px"></span>
+      </div>
+    </div>
+    <div class="receipt-meta">
+      <span>PERIOD: 2023-01-01 &mdash; 2024-12-31</span>
+      <span>ORDERS: 4,192</span>
+      <span>CUSTOMERS: 950</span>
+      <span>REGIONS: 5</span>
+    </div>
+  </div>
+
+  <div class="kpi-block">
+    <div class="kpi-row"><span class="kpi-label">Total Revenue</span><span class="kpi-value brand">฿15,077,900</span></div>
+    <div class="kpi-row"><span class="kpi-label">Total Profit</span><span class="kpi-value brand">฿4,761,720</span></div>
+    <div class="kpi-row"><span class="kpi-label">Avg. Order Value</span><span class="kpi-value">฿3,116</span></div>
+    <div class="kpi-row"><span class="kpi-label">Blended Profit Margin</span><span class="kpi-value">31.6%</span></div>
+    <div class="kpi-row"><span class="kpi-label">Orders w/ Discount &gt;10%</span><span class="kpi-value warn">522 (12.5%)</span></div>
+  </div>
+
+  <div class="tabs" role="tablist">
+    <button class="tab-btn active" data-tab="overview">Overview</button>
+    <button class="tab-btn" data-tab="products">Products &amp; Regions</button>
+    <button class="tab-btn" data-tab="customers">Customers</button>
+  </div>
+
+  <!-- OVERVIEW -->
+  <div class="panel active" id="overview">
+    <div class="card">
+      <h3>Monthly Revenue Trend</h3>
+      <p class="note">Revenue grows steadily through 2023, peaks in early 2024, then tapers into Q4 2024 &mdash; worth investigating against marketing spend and seasonal demand.</p>
+      <div class="chart-box"><canvas id="chartMonthly"></canvas></div>
+    </div>
+
+    <div class="insight">
+      <div class="eyebrow">Key Finding</div>
+      <p>Orders with <strong>no discount</strong> carry a <strong>34.4% profit margin</strong>, while orders discounted <strong>above 10%</strong> fall to <strong>21.2%</strong>. Discounting is moving units but not paying for itself in profit &mdash; a tiered discount policy could recover an estimated ฿300K&ndash;500K in annual margin.</p>
+    </div>
+
+    <div class="card">
+      <h3>Profit Margin by Discount Band</h3>
+      <div class="chart-box"><canvas id="chartDiscount"></canvas></div>
+    </div>
+  </div>
+
+  <!-- PRODUCTS & REGIONS -->
+  <div class="panel" id="products">
+    <div class="card">
+      <h3>Revenue by Category</h3>
+      <p class="note">Electronics dominates revenue share but Home &amp; Living and Fashion post the highest margins &mdash; a cross-sell opportunity.</p>
+      <div class="chart-box"><canvas id="chartCategory"></canvas></div>
+    </div>
+    <div class="card">
+      <h3>Revenue by Region</h3>
+      <div class="chart-box"><canvas id="chartRegion"></canvas></div>
+    </div>
+    <div class="card">
+      <h3>Top 5 Products by Revenue</h3>
+      <table class="receipt-table">
+        <thead><tr><th>Product</th><th>Category</th><th class="num">Units</th><th class="num">Revenue</th></tr></thead>
+        <tbody id="topProductsBody"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- CUSTOMERS -->
+  <div class="panel" id="customers">
+    <div class="card">
+      <h3>RFM Customer Segments</h3>
+      <p class="note">Recency–Frequency–Monetary scoring splits the customer base into actionable tiers for retention and loyalty targeting.</p>
+      <div class="chart-box tall"><canvas id="chartRFM"></canvas></div>
+    </div>
+    <div class="card">
+      <h3>Segment Summary</h3>
+      <table class="receipt-table">
+        <thead><tr><th>Segment</th><th class="num">Customers</th><th class="num">Avg. Spend</th></tr></thead>
+        <tbody id="segBody"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="receipt-foot">
+    <div class="stars">* * *</div>
+    THANK YOU FOR REVIEWING THIS REPORT<br>
+    NextCart Retail Sales Analysis &mdash; Portfolio Project
+  </div>
+</div>
+
+<script>
+const INK = "#1B1F3B", BRAND = "#1D7A6F", WARN = "#D9772E", DANGER = "#B33A3A", MUTED="#C9C4B6";
+Chart.defaults.font.family = "'IBM Plex Mono', monospace";
+Chart.defaults.font.size = 11;
+Chart.defaults.color = "#5b5e6b";
+
+const monthly = [["2023-01",43574],["2023-02",141756],["2023-03",302724],["2023-04",410074],["2023-05",468236],["2023-06",562142],["2023-07",766712],["2023-08",498798],["2023-09",690310],["2023-10",783874],["2023-11",826770],["2023-12",678566],["2024-01",858602],["2024-02",895648],["2024-03",785580],["2024-04",734463],["2024-05",781128],["2024-06",673183],["2024-07",549920],["2024-08",580174],["2024-09",475188],["2024-10",347210],["2024-11",178375],["2024-12",44896]];
+const cat = [["Electronics",8103018],["Home & Living",2099706],["Beauty",1073365],["Fashion",968668],["Office Supplies",833142]];
+const reg = [["Bangkok & Vicinity",5178299],["Northeastern",2273504],["Central",2115920],["Northern",1817947],["Southern",1692230]];
+const seg = [{"Segment":"Champions","num_customers":236,"avg_monetary":27503.47},{"Segment":"Loyal Customers","num_customers":255,"avg_monetary":15117.52},{"Segment":"Potential Loyalists","num_customers":232,"avg_monetary":8687.56},{"Segment":"At Risk","num_customers":138,"avg_monetary":4202.33},{"Segment":"Lost / Inactive","num_customers":79,"avg_monetary":1730.11}];
+const topProducts = [
+  ["Laptop","Electronics",266,4729525],
+  ["Smartphone","Electronics",256,2166705],
+  ["Air Purifier","Home & Living",254,1225295],
+  ["Smart Watch","Electronics",220,743196],
+  ["Office Chair","Office Supplies",216,594907],
+];
+
+function thb(n){return "฿" + Number(n).toLocaleString("en-US", {maximumFractionDigits:0});}
+
+new Chart(document.getElementById('chartMonthly'), {
+  type:'line',
+  data:{ labels: monthly.map(d=>d[0]),
+    datasets:[{ label:'Revenue', data: monthly.map(d=>d[1]), borderColor:BRAND, backgroundColor:'rgba(29,122,111,0.08)', fill:true, tension:.3, pointRadius:3, pointBackgroundColor:BRAND }]},
+  options:{ plugins:{legend:{display:false}}, scales:{ x:{ticks:{maxRotation:60,minRotation:60}, grid:{display:false}}, y:{grid:{color:'#EDEAE0'}, ticks:{callback:v=>(v/1000)+'K'}} } }
+});
+
+new Chart(document.getElementById('chartDiscount'), {
+  type:'bar',
+  data:{ labels:['No Discount','Low (1-10%)','High (>10%)'],
+    datasets:[{ data:[34.4,29.9,21.2], backgroundColor:[BRAND,WARN,DANGER], borderRadius:3 }]},
+  options:{ plugins:{legend:{display:false}}, scales:{ y:{grid:{color:'#EDEAE0'}, ticks:{callback:v=>v+'%'}}, x:{grid:{display:false}} } }
+});
+
+new Chart(document.getElementById('chartCategory'), {
+  type:'bar',
+  data:{ labels: cat.map(d=>d[0]),
+    datasets:[{ data: cat.map(d=>d[1]), backgroundColor: BRAND, borderRadius:3 }]},
+  options:{ indexAxis:'y', plugins:{legend:{display:false}}, scales:{ x:{grid:{color:'#EDEAE0'}, ticks:{callback:v=>(v/1e6)+'M'}}, y:{grid:{display:false}} } }
+});
+
+new Chart(document.getElementById('chartRegion'), {
+  type:'bar',
+  data:{ labels: reg.map(d=>d[0]),
+    datasets:[{ data: reg.map(d=>d[1]), backgroundColor: INK, borderRadius:3 }]},
+  options:{ indexAxis:'y', plugins:{legend:{display:false}}, scales:{ x:{grid:{color:'#EDEAE0'}, ticks:{callback:v=>(v/1e6)+'M'}}, y:{grid:{display:false}} } }
+});
+
+new Chart(document.getElementById('chartRFM'), {
+  type:'bar',
+  data:{ labels: seg.map(d=>d.Segment),
+    datasets:[{ label:'Customers', data: seg.map(d=>d.num_customers), backgroundColor: BRAND, borderRadius:3, yAxisID:'y' }]},
+  options:{
+    plugins:{legend:{display:false}},
+    scales:{ x:{grid:{display:false}, ticks:{maxRotation:18,minRotation:0}}, y:{grid:{color:'#EDEAE0'}} }
+  }
+});
+
+const tpBody = document.getElementById('topProductsBody');
+topProducts.forEach(([name,c,units,rev])=>{
+  tpBody.innerHTML += `<tr><td>${name}</td><td>${c}</td><td class="num">${units}</td><td class="num">${thb(rev)}</td></tr>`;
+});
+
+const segColors = {"Champions":[BRAND,"#fff"], "Loyal Customers":["#CFE8E3",INK], "Potential Loyalists":["#EDEAE0",INK], "At Risk":[WARN,"#fff"], "Lost / Inactive":[DANGER,"#fff"]};
+const segBody = document.getElementById('segBody');
+seg.forEach(s=>{
+  const [bg,fg] = segColors[s.Segment] || ["#eee",INK];
+  segBody.innerHTML += `<tr><td><span class="seg-tag" style="background:${bg};color:${fg}">${s.Segment}</span></td><td class="num">${s.num_customers}</td><td class="num">${thb(s.avg_monetary)}</td></tr>`;
+});
+
+// Tabs
+document.querySelectorAll('.tab-btn').forEach(btn=>{
+  btn.addEventListener('click', ()=>{
+    document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+    document.querySelectorAll('.panel').forEach(p=>p.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById(btn.dataset.tab).classList.add('active');
+  });
+});
+</script>
+</body>
+</html>

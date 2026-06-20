@@ -1,0 +1,941 @@
+Customer ID,Recency,Frequency,Monetary,R_score,F_score,M_score,RFM_total,Segment
+CUST-0001,194,1,9980.0,2,1,3,6,Potential Loyalists
+CUST-0002,116,4,13171.0,3,2,3,8,Loyal Customers
+CUST-0003,620,1,655.5,1,1,1,3,Lost / Inactive
+CUST-0004,299,3,4651.0,1,1,2,4,At Risk
+CUST-0005,94,3,3341.0,4,1,1,6,Potential Loyalists
+CUST-0006,168,9,11800.0,3,4,3,10,Champions
+CUST-0007,84,8,35305.0,4,4,4,12,Champions
+CUST-0008,222,2,21033.0,2,1,4,7,Potential Loyalists
+CUST-0009,84,3,2596.5,4,1,1,6,Potential Loyalists
+CUST-0010,27,9,12936.5,4,4,3,11,Champions
+CUST-0011,218,6,20495.0,2,3,4,9,Loyal Customers
+CUST-0012,35,5,32911.0,4,3,4,11,Champions
+CUST-0013,358,4,21225.5,1,2,4,7,Potential Loyalists
+CUST-0014,200,5,7650.0,2,3,2,7,Potential Loyalists
+CUST-0015,176,7,20886.5,3,4,4,11,Champions
+CUST-0016,164,3,27965.0,3,1,4,8,Loyal Customers
+CUST-0017,87,5,31816.5,4,3,4,11,Champions
+CUST-0018,677,1,480.0,1,1,1,3,Lost / Inactive
+CUST-0019,267,2,10536.5,1,1,3,5,At Risk
+CUST-0020,212,5,2468.5,2,3,1,6,Potential Loyalists
+CUST-0021,20,5,9071.5,4,3,3,10,Champions
+CUST-0022,144,4,36943.5,3,2,4,9,Loyal Customers
+CUST-0023,391,2,35150.0,1,1,4,6,Potential Loyalists
+CUST-0024,228,6,8974.5,2,3,3,8,Loyal Customers
+CUST-0025,455,3,1712.0,1,1,1,3,Lost / Inactive
+CUST-0026,47,2,7550.0,4,1,2,7,Potential Loyalists
+CUST-0027,423,2,1191.5,1,1,1,3,Lost / Inactive
+CUST-0028,84,3,21870.0,4,1,4,9,Loyal Customers
+CUST-0029,146,6,11223.5,3,3,3,9,Loyal Customers
+CUST-0030,274,10,15179.0,1,4,3,8,Loyal Customers
+CUST-0031,51,6,32384.0,4,3,4,11,Champions
+CUST-0032,274,1,3021.0,1,1,1,3,Lost / Inactive
+CUST-0033,136,4,3111.0,3,2,1,6,Potential Loyalists
+CUST-0034,350,5,4132.0,1,3,2,6,Potential Loyalists
+CUST-0035,176,3,8280.0,3,1,2,6,Potential Loyalists
+CUST-0036,275,3,5030.0,1,1,2,4,At Risk
+CUST-0037,487,1,1290.0,1,1,1,3,Lost / Inactive
+CUST-0038,55,3,6523.0,4,1,2,7,Potential Loyalists
+CUST-0039,358,2,9486.5,1,1,3,5,At Risk
+CUST-0040,224,4,6759.5,2,2,2,6,Potential Loyalists
+CUST-0041,126,7,12573.0,3,4,3,10,Champions
+CUST-0042,412,2,2970.0,1,1,1,3,Lost / Inactive
+CUST-0043,181,5,6708.5,2,3,2,7,Potential Loyalists
+CUST-0044,93,7,8435.5,4,4,2,10,Champions
+CUST-0045,112,6,47657.0,3,3,4,10,Champions
+CUST-0046,105,4,33106.0,4,2,4,10,Champions
+CUST-0047,192,9,51322.0,2,4,4,10,Champions
+CUST-0048,316,3,9095.5,1,1,3,5,At Risk
+CUST-0049,157,4,12380.0,3,2,3,8,Loyal Customers
+CUST-0050,179,8,19211.5,2,4,4,10,Champions
+CUST-0051,339,2,2780.0,1,1,1,3,Lost / Inactive
+CUST-0052,166,5,40175.0,3,3,4,10,Champions
+CUST-0053,118,1,4241.5,3,1,2,6,Potential Loyalists
+CUST-0054,63,6,6094.0,4,3,2,9,Loyal Customers
+CUST-0055,50,9,9827.5,4,4,3,11,Champions
+CUST-0056,297,8,25601.0,1,4,4,9,Loyal Customers
+CUST-0057,111,5,37765.5,3,3,4,10,Champions
+CUST-0058,152,5,21971.0,3,3,4,10,Champions
+CUST-0059,484,2,1440.0,1,1,1,3,Lost / Inactive
+CUST-0060,331,2,980.0,1,1,1,3,Lost / Inactive
+CUST-0061,154,3,59435.5,3,1,4,8,Loyal Customers
+CUST-0062,359,3,3513.5,1,1,1,3,Lost / Inactive
+CUST-0063,122,4,5219.5,3,2,2,7,Potential Loyalists
+CUST-0064,188,5,17715.0,2,3,3,8,Loyal Customers
+CUST-0065,179,3,13170.5,2,1,3,6,Potential Loyalists
+CUST-0066,205,2,8985.5,2,1,3,6,Potential Loyalists
+CUST-0067,683,1,3570.0,1,1,1,3,Lost / Inactive
+CUST-0068,293,5,15600.0,1,3,3,7,Potential Loyalists
+CUST-0069,248,1,17575.0,2,1,3,6,Potential Loyalists
+CUST-0070,19,5,18911.5,4,3,3,10,Champions
+CUST-0071,399,1,1290.0,1,1,1,3,Lost / Inactive
+CUST-0072,57,4,4632.5,4,2,2,8,Loyal Customers
+CUST-0073,98,7,12053.0,4,4,3,11,Champions
+CUST-0074,101,3,4095.0,4,1,2,7,Potential Loyalists
+CUST-0075,132,2,14140.0,3,1,3,7,Potential Loyalists
+CUST-0076,220,3,3130.0,2,1,1,4,At Risk
+CUST-0077,47,6,4770.5,4,3,2,9,Loyal Customers
+CUST-0079,196,4,22724.5,2,2,4,8,Loyal Customers
+CUST-0080,97,5,2460.0,4,3,1,8,Loyal Customers
+CUST-0081,137,5,40338.5,3,3,4,10,Champions
+CUST-0082,75,4,9640.0,4,2,3,9,Loyal Customers
+CUST-0083,131,3,2811.0,3,1,1,5,At Risk
+CUST-0084,315,2,2256.0,1,1,1,3,Lost / Inactive
+CUST-0085,130,7,6845.0,3,4,2,9,Loyal Customers
+CUST-0086,93,3,5481.0,4,1,2,7,Potential Loyalists
+CUST-0087,78,7,11375.5,4,4,3,11,Champions
+CUST-0088,78,6,31901.5,4,3,4,11,Champions
+CUST-0089,85,9,28800.0,4,4,4,12,Champions
+CUST-0090,177,6,46793.5,3,3,4,10,Champions
+CUST-0091,54,3,6431.5,4,1,2,7,Potential Loyalists
+CUST-0092,82,8,43771.0,4,4,4,12,Champions
+CUST-0093,239,7,11644.0,2,4,3,9,Loyal Customers
+CUST-0094,280,5,21103.5,1,3,4,8,Loyal Customers
+CUST-0095,61,5,10021.0,4,3,3,10,Champions
+CUST-0096,90,8,43725.5,4,4,4,12,Champions
+CUST-0097,149,3,16930.0,3,1,3,7,Potential Loyalists
+CUST-0098,43,4,9916.0,4,2,3,9,Loyal Customers
+CUST-0099,86,6,6889.5,4,3,2,9,Loyal Customers
+CUST-0100,103,8,26972.5,4,4,4,12,Champions
+CUST-0101,135,4,9331.0,3,2,3,8,Loyal Customers
+CUST-0102,199,3,3041.0,2,1,1,4,At Risk
+CUST-0103,105,5,5341.0,4,3,2,9,Loyal Customers
+CUST-0104,480,2,4180.0,1,1,2,4,At Risk
+CUST-0105,99,4,4898.5,4,2,2,8,Loyal Customers
+CUST-0106,222,6,17030.5,2,3,3,8,Loyal Customers
+CUST-0107,173,7,14175.5,3,4,3,10,Champions
+CUST-0108,235,2,3141.0,2,1,1,4,At Risk
+CUST-0109,409,1,1190.0,1,1,1,3,Lost / Inactive
+CUST-0110,263,3,7284.0,1,1,2,4,At Risk
+CUST-0111,691,1,522.0,1,1,1,3,Lost / Inactive
+CUST-0112,83,6,40802.5,4,3,4,11,Champions
+CUST-0113,102,4,16982.0,4,2,3,9,Loyal Customers
+CUST-0114,187,8,6787.0,2,4,2,8,Loyal Customers
+CUST-0115,426,2,540.0,1,1,1,3,Lost / Inactive
+CUST-0116,78,9,16423.5,4,4,3,11,Champions
+CUST-0117,145,6,17253.5,3,3,3,9,Loyal Customers
+CUST-0118,107,6,14160.5,3,3,3,9,Loyal Customers
+CUST-0119,366,2,2420.5,1,1,1,3,Lost / Inactive
+CUST-0120,236,6,6933.5,2,3,2,7,Potential Loyalists
+CUST-0121,336,3,5675.5,1,1,2,4,At Risk
+CUST-0122,130,5,3524.0,3,3,1,7,Potential Loyalists
+CUST-0123,244,5,32869.5,2,3,4,9,Loyal Customers
+CUST-0124,196,5,6972.0,2,3,2,7,Potential Loyalists
+CUST-0125,172,4,4061.0,3,2,1,6,Potential Loyalists
+CUST-0126,262,5,79217.5,1,3,4,8,Loyal Customers
+CUST-0127,121,5,47170.0,3,3,4,10,Champions
+CUST-0128,94,5,13939.5,4,3,3,10,Champions
+CUST-0129,355,2,2001.5,1,1,1,3,Lost / Inactive
+CUST-0130,124,6,11524.0,3,3,3,9,Loyal Customers
+CUST-0131,118,5,12093.0,3,3,3,9,Loyal Customers
+CUST-0132,51,6,38794.0,4,3,4,11,Champions
+CUST-0133,286,5,9693.0,1,3,3,7,Potential Loyalists
+CUST-0134,114,4,7107.5,3,2,2,7,Potential Loyalists
+CUST-0135,254,5,5893.0,2,3,2,7,Potential Loyalists
+CUST-0136,62,6,35681.0,4,3,4,11,Champions
+CUST-0137,408,1,690.0,1,1,1,3,Lost / Inactive
+CUST-0138,332,5,3491.0,1,3,1,5,At Risk
+CUST-0139,107,3,1830.0,3,1,1,5,At Risk
+CUST-0140,287,5,27146.0,1,3,4,8,Loyal Customers
+CUST-0141,59,6,9391.0,4,3,3,10,Champions
+CUST-0142,239,2,3780.0,2,1,1,4,At Risk
+CUST-0143,183,2,2930.0,2,1,1,4,At Risk
+CUST-0144,239,5,22817.0,2,3,4,9,Loyal Customers
+CUST-0145,185,2,16290.0,2,1,3,6,Potential Loyalists
+CUST-0146,408,4,22070.0,1,2,4,7,Potential Loyalists
+CUST-0147,118,4,2261.0,3,2,1,6,Potential Loyalists
+CUST-0148,219,5,3381.0,2,3,1,6,Potential Loyalists
+CUST-0149,221,3,3651.0,2,1,1,4,At Risk
+CUST-0150,130,4,38751.5,3,2,4,9,Loyal Customers
+CUST-0151,351,1,1071.0,1,1,1,3,Lost / Inactive
+CUST-0152,18,9,62857.5,4,4,4,12,Champions
+CUST-0153,299,5,4247.5,1,3,2,6,Potential Loyalists
+CUST-0154,183,5,12311.5,2,3,3,8,Loyal Customers
+CUST-0155,140,3,4780.0,3,1,2,6,Potential Loyalists
+CUST-0156,249,2,2752.5,2,1,1,4,At Risk
+CUST-0157,282,6,13159.0,1,3,3,7,Potential Loyalists
+CUST-0158,380,1,1590.0,1,1,1,3,Lost / Inactive
+CUST-0159,140,4,3152.0,3,2,1,6,Potential Loyalists
+CUST-0160,140,3,19497.5,3,1,4,8,Loyal Customers
+CUST-0161,127,4,26571.0,3,2,4,9,Loyal Customers
+CUST-0162,143,6,21352.0,3,3,4,10,Champions
+CUST-0163,317,3,6480.0,1,1,2,4,At Risk
+CUST-0164,82,4,24890.0,4,2,4,10,Champions
+CUST-0165,37,6,10263.5,4,3,3,10,Champions
+CUST-0166,71,7,11061.5,4,4,3,11,Champions
+CUST-0167,202,4,5067.5,2,2,2,6,Potential Loyalists
+CUST-0168,541,1,2831.0,1,1,1,3,Lost / Inactive
+CUST-0169,120,6,11081.5,3,3,3,9,Loyal Customers
+CUST-0170,78,4,2495.5,4,2,1,7,Potential Loyalists
+CUST-0171,97,8,19128.5,4,4,4,12,Champions
+CUST-0172,104,10,48906.0,4,4,4,12,Champions
+CUST-0173,140,6,17141.5,3,3,3,9,Loyal Customers
+CUST-0174,273,5,8666.0,1,3,3,7,Potential Loyalists
+CUST-0175,145,4,18247.5,3,2,3,8,Loyal Customers
+CUST-0176,80,3,2621.0,4,1,1,6,Potential Loyalists
+CUST-0177,102,5,14140.5,4,3,3,10,Champions
+CUST-0178,111,3,1230.0,3,1,1,5,At Risk
+CUST-0179,476,2,2450.5,1,1,1,3,Lost / Inactive
+CUST-0180,236,3,7440.0,2,1,2,5,At Risk
+CUST-0181,454,3,1812.5,1,1,1,3,Lost / Inactive
+CUST-0182,455,1,350.0,1,1,1,3,Lost / Inactive
+CUST-0183,115,6,8811.0,3,3,3,9,Loyal Customers
+CUST-0184,223,6,14113.5,2,3,3,8,Loyal Customers
+CUST-0185,64,7,7492.5,4,4,2,10,Champions
+CUST-0186,274,4,16294.5,1,2,3,6,Potential Loyalists
+CUST-0187,38,6,25860.5,4,3,4,11,Champions
+CUST-0188,155,3,3570.0,3,1,1,5,At Risk
+CUST-0189,67,8,84884.5,4,4,4,12,Champions
+CUST-0190,79,7,7218.0,4,4,2,10,Champions
+CUST-0191,222,5,3946.5,2,3,1,6,Potential Loyalists
+CUST-0192,118,7,7808.0,3,4,2,9,Loyal Customers
+CUST-0193,66,5,5537.5,4,3,2,9,Loyal Customers
+CUST-0194,22,3,7975.5,4,1,2,7,Potential Loyalists
+CUST-0195,99,6,12979.5,4,3,3,10,Champions
+CUST-0196,251,3,16661.0,2,1,3,6,Potential Loyalists
+CUST-0197,83,4,3231.0,4,2,1,7,Potential Loyalists
+CUST-0198,218,8,39275.5,2,4,4,10,Champions
+CUST-0199,139,5,20756.0,3,3,4,10,Champions
+CUST-0200,121,4,19380.0,3,2,4,9,Loyal Customers
+CUST-0201,388,2,1819.5,1,1,1,3,Lost / Inactive
+CUST-0202,315,2,8305.0,1,1,2,4,At Risk
+CUST-0203,353,2,2090.0,1,1,1,3,Lost / Inactive
+CUST-0204,264,3,8360.0,1,1,2,4,At Risk
+CUST-0205,125,9,58239.0,3,4,4,11,Champions
+CUST-0206,55,9,65513.0,4,4,4,12,Champions
+CUST-0207,69,5,23676.0,4,3,4,11,Champions
+CUST-0208,102,6,5540.5,4,3,2,9,Loyal Customers
+CUST-0209,60,6,8511.0,4,3,2,9,Loyal Customers
+CUST-0210,376,3,4225.5,1,1,2,4,At Risk
+CUST-0211,9,7,10518.5,4,4,3,11,Champions
+CUST-0212,169,7,40822.0,3,4,4,11,Champions
+CUST-0213,322,5,4824.0,1,3,2,6,Potential Loyalists
+CUST-0214,33,2,247.5,4,1,1,6,Potential Loyalists
+CUST-0215,51,5,24119.5,4,3,4,11,Champions
+CUST-0216,136,9,14630.5,3,4,3,10,Champions
+CUST-0217,236,7,16760.0,2,4,3,9,Loyal Customers
+CUST-0218,276,2,36060.0,1,1,4,6,Potential Loyalists
+CUST-0219,185,2,1842.0,2,1,1,4,At Risk
+CUST-0220,320,4,4075.5,1,2,1,4,At Risk
+CUST-0221,78,3,5225.5,4,1,2,7,Potential Loyalists
+CUST-0222,139,5,10566.5,3,3,3,9,Loyal Customers
+CUST-0223,161,7,27811.5,3,4,4,11,Champions
+CUST-0224,38,8,5764.5,4,4,2,10,Champions
+CUST-0225,294,6,63786.5,1,3,4,8,Loyal Customers
+CUST-0226,55,8,98906.5,4,4,4,12,Champions
+CUST-0227,232,4,4431.0,2,2,2,6,Potential Loyalists
+CUST-0228,239,4,5088.5,2,2,2,6,Potential Loyalists
+CUST-0229,133,4,2402.0,3,2,1,6,Potential Loyalists
+CUST-0230,30,9,43331.0,4,4,4,12,Champions
+CUST-0231,267,1,655.5,1,1,1,3,Lost / Inactive
+CUST-0232,221,4,2972.0,2,2,1,5,At Risk
+CUST-0233,390,3,4540.0,1,1,2,4,At Risk
+CUST-0234,101,3,38280.5,4,1,4,9,Loyal Customers
+CUST-0235,109,2,19165.0,3,1,4,8,Loyal Customers
+CUST-0236,256,6,4947.0,2,3,2,7,Potential Loyalists
+CUST-0237,84,3,5924.0,4,1,2,7,Potential Loyalists
+CUST-0238,200,7,5863.5,2,4,2,8,Loyal Customers
+CUST-0239,1,6,29750.5,4,3,4,11,Champions
+CUST-0240,76,4,22660.0,4,2,4,10,Champions
+CUST-0241,196,7,26351.0,2,4,4,10,Champions
+CUST-0242,196,3,2934.0,2,1,1,4,At Risk
+CUST-0243,240,7,52859.5,2,4,4,10,Champions
+CUST-0244,132,7,16011.5,3,4,3,10,Champions
+CUST-0245,68,3,2263.5,4,1,1,6,Potential Loyalists
+CUST-0246,126,5,5466.5,3,3,2,8,Loyal Customers
+CUST-0247,148,9,12042.5,3,4,3,10,Champions
+CUST-0248,87,3,3037.5,4,1,1,6,Potential Loyalists
+CUST-0249,37,8,6512.5,4,4,2,10,Champions
+CUST-0250,66,5,23182.0,4,3,4,11,Champions
+CUST-0251,490,4,17290.0,1,2,3,6,Potential Loyalists
+CUST-0252,176,5,43743.0,3,3,4,10,Champions
+CUST-0253,209,4,11316.5,2,2,3,7,Potential Loyalists
+CUST-0254,162,7,13690.0,3,4,3,10,Champions
+CUST-0255,107,7,7138.5,3,4,2,9,Loyal Customers
+CUST-0256,76,9,32350.0,4,4,4,12,Champions
+CUST-0257,229,5,43520.0,2,3,4,9,Loyal Customers
+CUST-0258,144,4,3764.0,3,2,1,6,Potential Loyalists
+CUST-0259,170,3,6105.5,3,1,2,6,Potential Loyalists
+CUST-0260,95,7,34489.5,4,4,4,12,Champions
+CUST-0261,188,4,22791.0,2,2,4,8,Loyal Customers
+CUST-0262,190,3,2629.5,2,1,1,4,At Risk
+CUST-0263,122,5,14360.0,3,3,3,9,Loyal Customers
+CUST-0264,586,1,256.5,1,1,1,3,Lost / Inactive
+CUST-0265,271,4,3262.5,1,2,1,4,At Risk
+CUST-0266,256,7,19751.5,2,4,4,10,Champions
+CUST-0267,283,7,10032.0,1,4,3,8,Loyal Customers
+CUST-0268,160,5,13064.0,3,3,3,9,Loyal Customers
+CUST-0269,330,4,2585.0,1,2,1,4,At Risk
+CUST-0270,102,4,27681.0,4,2,4,10,Champions
+CUST-0271,125,4,25121.5,3,2,4,9,Loyal Customers
+CUST-0272,303,6,26262.0,1,3,4,8,Loyal Customers
+CUST-0273,72,3,1600.0,4,1,1,6,Potential Loyalists
+CUST-0274,285,4,10327.5,1,2,3,6,Potential Loyalists
+CUST-0275,109,5,4889.5,3,3,2,8,Loyal Customers
+CUST-0276,93,1,332.5,4,1,1,6,Potential Loyalists
+CUST-0277,139,4,20740.0,3,2,4,9,Loyal Customers
+CUST-0278,373,5,16196.0,1,3,3,7,Potential Loyalists
+CUST-0279,527,1,3570.0,1,1,1,3,Lost / Inactive
+CUST-0280,39,6,8200.0,4,3,2,9,Loyal Customers
+CUST-0281,51,6,12336.5,4,3,3,10,Champions
+CUST-0282,279,4,7610.0,1,2,2,5,At Risk
+CUST-0283,330,4,2356.5,1,2,1,4,At Risk
+CUST-0284,89,5,26255.5,4,3,4,11,Champions
+CUST-0285,226,5,1396.0,2,3,1,6,Potential Loyalists
+CUST-0286,108,2,1580.0,3,1,1,5,At Risk
+CUST-0287,141,7,27868.0,3,4,4,11,Champions
+CUST-0288,141,5,7630.0,3,3,2,8,Loyal Customers
+CUST-0290,314,6,14596.5,1,4,3,8,Loyal Customers
+CUST-0291,257,3,2252.5,2,1,1,4,At Risk
+CUST-0292,47,10,16654.0,4,4,3,11,Champions
+CUST-0293,108,4,2555.0,3,2,1,6,Potential Loyalists
+CUST-0294,204,4,1708.5,2,2,1,5,At Risk
+CUST-0295,130,2,12390.0,3,1,3,7,Potential Loyalists
+CUST-0296,144,6,13647.0,3,4,3,10,Champions
+CUST-0297,74,6,6734.5,4,4,2,10,Champions
+CUST-0298,254,6,28595.5,2,4,4,10,Champions
+CUST-0299,224,4,36917.5,2,2,4,8,Loyal Customers
+CUST-0300,275,2,6258.0,1,1,2,4,At Risk
+CUST-0301,224,7,16046.5,2,4,3,9,Loyal Customers
+CUST-0302,55,6,4472.0,4,4,2,10,Champions
+CUST-0303,60,5,21525.0,4,3,4,11,Champions
+CUST-0304,260,3,12785.5,2,1,3,6,Potential Loyalists
+CUST-0305,150,1,890.0,3,1,1,5,At Risk
+CUST-0306,84,11,39016.5,4,4,4,12,Champions
+CUST-0307,27,12,31648.5,4,4,4,12,Champions
+CUST-0308,108,6,37191.0,3,4,4,11,Champions
+CUST-0309,89,2,1386.5,4,1,1,6,Potential Loyalists
+CUST-0310,241,4,5521.0,2,2,2,6,Potential Loyalists
+CUST-0311,178,3,9595.0,2,1,3,6,Potential Loyalists
+CUST-0312,63,3,8176.0,4,1,2,7,Potential Loyalists
+CUST-0313,121,6,28347.5,3,4,4,11,Champions
+CUST-0314,443,1,350.0,1,1,1,3,Lost / Inactive
+CUST-0315,142,4,6532.0,3,2,2,7,Potential Loyalists
+CUST-0316,40,8,12875.5,4,4,3,11,Champions
+CUST-0317,22,4,3210.5,4,2,1,7,Potential Loyalists
+CUST-0318,305,2,611.0,1,1,1,3,Lost / Inactive
+CUST-0319,208,3,1484.0,2,1,1,4,At Risk
+CUST-0320,117,4,6368.0,3,2,2,7,Potential Loyalists
+CUST-0321,60,7,66721.0,4,4,4,12,Champions
+CUST-0322,193,8,33275.5,2,4,4,10,Champions
+CUST-0323,534,2,1765.5,1,1,1,3,Lost / Inactive
+CUST-0324,166,7,26811.0,3,4,4,11,Champions
+CUST-0325,358,3,8480.0,1,1,2,4,At Risk
+CUST-0326,184,5,3370.0,2,3,1,6,Potential Loyalists
+CUST-0327,124,6,9390.0,3,4,3,10,Champions
+CUST-0328,236,6,8727.5,2,4,3,9,Loyal Customers
+CUST-0329,21,6,23472.0,4,4,4,12,Champions
+CUST-0330,175,4,6808.0,3,2,2,7,Potential Loyalists
+CUST-0331,168,5,32432.0,3,3,4,10,Champions
+CUST-0332,228,5,12312.5,2,3,3,8,Loyal Customers
+CUST-0333,73,10,58117.0,4,4,4,12,Champions
+CUST-0334,123,3,918.0,3,1,1,5,At Risk
+CUST-0335,263,4,2865.0,1,2,1,4,At Risk
+CUST-0336,153,5,7492.0,3,3,2,8,Loyal Customers
+CUST-0337,391,3,39826.5,1,1,4,6,Potential Loyalists
+CUST-0338,485,2,1280.0,1,1,1,3,Lost / Inactive
+CUST-0339,85,5,13532.0,4,3,3,10,Champions
+CUST-0340,270,4,12006.0,1,2,3,6,Potential Loyalists
+CUST-0341,352,2,2481.0,1,1,1,3,Lost / Inactive
+CUST-0342,160,7,38816.0,3,4,4,11,Champions
+CUST-0343,85,6,36956.0,4,4,4,12,Champions
+CUST-0344,181,4,5720.0,2,2,2,6,Potential Loyalists
+CUST-0345,168,4,7831.0,3,2,2,7,Potential Loyalists
+CUST-0346,186,6,4805.0,2,4,2,8,Loyal Customers
+CUST-0347,226,1,990.0,2,1,1,4,At Risk
+CUST-0348,159,3,4011.0,3,1,1,5,At Risk
+CUST-0349,275,7,6912.0,1,4,2,7,Potential Loyalists
+CUST-0350,121,5,16125.5,3,3,3,9,Loyal Customers
+CUST-0351,229,3,2570.0,2,1,1,4,At Risk
+CUST-0352,112,7,27541.0,3,4,4,11,Champions
+CUST-0353,204,5,7554.0,2,3,2,7,Potential Loyalists
+CUST-0354,274,3,3852.0,1,1,1,3,Lost / Inactive
+CUST-0355,13,4,6985.5,4,2,2,8,Loyal Customers
+CUST-0356,186,5,24137.5,2,3,4,9,Loyal Customers
+CUST-0357,290,3,2135.5,1,1,1,3,Lost / Inactive
+CUST-0358,180,5,51207.0,2,3,4,9,Loyal Customers
+CUST-0359,171,3,4830.0,3,1,2,6,Potential Loyalists
+CUST-0360,315,6,6738.0,1,4,2,7,Potential Loyalists
+CUST-0361,122,6,10092.5,3,4,3,10,Champions
+CUST-0362,265,6,8495.0,1,4,2,7,Potential Loyalists
+CUST-0363,156,3,3170.0,3,1,1,5,At Risk
+CUST-0364,185,6,8599.5,2,4,2,8,Loyal Customers
+CUST-0365,155,5,4200.0,3,3,2,8,Loyal Customers
+CUST-0366,130,5,4321.0,3,3,2,8,Loyal Customers
+CUST-0367,187,5,8388.0,2,3,2,7,Potential Loyalists
+CUST-0368,196,4,17882.0,2,2,3,7,Potential Loyalists
+CUST-0369,336,7,8156.0,1,4,2,7,Potential Loyalists
+CUST-0370,242,7,39521.5,2,4,4,10,Champions
+CUST-0371,107,5,25570.5,3,3,4,10,Champions
+CUST-0372,344,1,2601.0,1,1,1,3,Lost / Inactive
+CUST-0373,197,3,3935.0,2,1,1,4,At Risk
+CUST-0374,325,3,5361.0,1,1,2,4,At Risk
+CUST-0375,300,3,1201.5,1,1,1,3,Lost / Inactive
+CUST-0376,57,5,16155.0,4,3,3,10,Champions
+CUST-0377,217,6,8510.5,2,4,2,8,Loyal Customers
+CUST-0378,93,4,10920.5,4,2,3,9,Loyal Customers
+CUST-0379,285,5,11779.5,1,3,3,7,Potential Loyalists
+CUST-0380,198,3,3349.5,2,1,1,4,At Risk
+CUST-0381,153,2,10331.0,3,1,3,7,Potential Loyalists
+CUST-0382,257,5,2649.0,2,3,1,6,Potential Loyalists
+CUST-0383,212,7,8362.0,2,4,2,8,Loyal Customers
+CUST-0384,561,1,2242.0,1,1,1,3,Lost / Inactive
+CUST-0385,141,7,12583.5,3,4,3,10,Champions
+CUST-0386,303,4,3906.5,1,2,1,4,At Risk
+CUST-0387,156,3,1731.0,3,1,1,5,At Risk
+CUST-0388,69,3,6501.0,4,1,2,7,Potential Loyalists
+CUST-0389,307,3,3725.5,1,1,1,3,Lost / Inactive
+CUST-0390,175,4,3080.0,3,2,1,6,Potential Loyalists
+CUST-0391,253,5,31098.5,2,3,4,9,Loyal Customers
+CUST-0392,424,4,7879.0,1,2,2,5,At Risk
+CUST-0393,76,6,37750.5,4,4,4,12,Champions
+CUST-0394,244,5,5082.0,2,3,2,7,Potential Loyalists
+CUST-0395,177,3,17065.5,3,1,3,7,Potential Loyalists
+CUST-0396,253,3,4481.5,2,1,2,5,At Risk
+CUST-0397,68,5,1594.0,4,3,1,8,Loyal Customers
+CUST-0398,100,9,21870.0,4,4,4,12,Champions
+CUST-0399,199,5,48993.0,2,3,4,9,Loyal Customers
+CUST-0400,250,2,1740.0,2,1,1,4,At Risk
+CUST-0401,13,5,12370.0,4,3,3,10,Champions
+CUST-0402,348,3,4720.5,1,1,2,4,At Risk
+CUST-0403,332,1,180.0,1,1,1,3,Lost / Inactive
+CUST-0404,175,5,42308.5,3,3,4,10,Champions
+CUST-0405,48,4,20325.5,4,2,4,10,Champions
+CUST-0406,366,3,772.5,1,2,1,4,At Risk
+CUST-0407,113,4,28572.0,3,2,4,9,Loyal Customers
+CUST-0408,180,7,27580.0,2,4,4,10,Champions
+CUST-0409,202,5,38730.0,2,3,4,9,Loyal Customers
+CUST-0410,498,2,769.5,1,1,1,3,Lost / Inactive
+CUST-0411,69,8,25178.5,4,4,4,12,Champions
+CUST-0412,315,6,5857.5,1,4,2,7,Potential Loyalists
+CUST-0413,242,3,9485.5,2,2,3,7,Potential Loyalists
+CUST-0414,73,4,2280.0,4,2,1,7,Potential Loyalists
+CUST-0415,156,4,10240.0,3,2,3,8,Loyal Customers
+CUST-0416,82,6,76186.5,4,4,4,12,Champions
+CUST-0417,188,4,7642.0,2,2,2,6,Potential Loyalists
+CUST-0418,143,4,19677.5,3,2,4,9,Loyal Customers
+CUST-0419,359,4,3090.5,1,2,1,4,At Risk
+CUST-0420,5,2,1716.5,4,1,1,6,Potential Loyalists
+CUST-0421,60,6,27478.0,4,4,4,12,Champions
+CUST-0422,154,5,15836.0,3,3,3,9,Loyal Customers
+CUST-0423,280,6,5671.5,1,4,2,7,Potential Loyalists
+CUST-0424,72,6,8237.5,4,4,2,10,Champions
+CUST-0425,299,3,1671.0,1,2,1,4,At Risk
+CUST-0426,169,2,18608.0,3,1,3,7,Potential Loyalists
+CUST-0427,344,7,32613.0,1,4,4,9,Loyal Customers
+CUST-0428,400,4,11181.0,1,2,3,6,Potential Loyalists
+CUST-0429,220,4,5660.5,2,2,2,6,Potential Loyalists
+CUST-0430,253,3,2424.0,2,2,1,5,At Risk
+CUST-0431,88,5,4610.5,4,3,2,9,Loyal Customers
+CUST-0432,123,5,20056.5,3,3,4,10,Champions
+CUST-0433,107,6,20841.5,3,4,4,11,Champions
+CUST-0434,70,5,8860.0,4,3,3,10,Champions
+CUST-0435,110,4,2109.5,3,2,1,6,Potential Loyalists
+CUST-0436,317,2,2460.0,1,1,1,3,Lost / Inactive
+CUST-0437,249,5,11959.0,2,3,3,8,Loyal Customers
+CUST-0438,125,7,31276.5,3,4,4,11,Champions
+CUST-0439,219,6,32926.0,2,4,4,10,Champions
+CUST-0440,262,4,6940.0,1,2,2,5,At Risk
+CUST-0441,305,4,2150.0,1,2,1,4,At Risk
+CUST-0442,221,4,9307.5,2,2,3,7,Potential Loyalists
+CUST-0443,232,5,6041.5,2,3,2,7,Potential Loyalists
+CUST-0444,199,4,4191.0,2,2,2,6,Potential Loyalists
+CUST-0445,193,2,5371.0,2,1,2,5,At Risk
+CUST-0446,247,3,19655.0,2,2,4,8,Loyal Customers
+CUST-0447,153,3,8274.0,3,2,2,7,Potential Loyalists
+CUST-0448,208,2,37690.0,2,1,4,7,Potential Loyalists
+CUST-0449,419,1,1800.0,1,1,1,3,Lost / Inactive
+CUST-0450,205,7,64178.0,2,4,4,10,Champions
+CUST-0451,451,4,20568.0,1,2,4,7,Potential Loyalists
+CUST-0452,90,4,6860.5,4,2,2,8,Loyal Customers
+CUST-0453,242,5,22392.5,2,3,4,9,Loyal Customers
+CUST-0454,341,2,1742.0,1,1,1,3,Lost / Inactive
+CUST-0455,20,4,22631.0,4,2,4,10,Champions
+CUST-0456,134,5,46973.0,3,3,4,10,Champions
+CUST-0457,343,7,15917.5,1,4,3,8,Loyal Customers
+CUST-0458,148,5,6042.0,3,3,2,8,Loyal Customers
+CUST-0459,432,1,3490.0,1,1,1,3,Lost / Inactive
+CUST-0460,331,5,6929.0,1,3,2,6,Potential Loyalists
+CUST-0461,154,4,5311.0,3,2,2,7,Potential Loyalists
+CUST-0462,138,4,9751.0,3,2,3,8,Loyal Customers
+CUST-0463,185,7,22830.0,2,4,4,10,Champions
+CUST-0464,144,4,5532.5,3,2,2,7,Potential Loyalists
+CUST-0465,62,8,33319.5,4,4,4,12,Champions
+CUST-0466,259,3,3670.0,2,2,1,5,At Risk
+CUST-0467,169,3,2852.0,3,2,1,6,Potential Loyalists
+CUST-0468,292,4,6441.0,1,2,2,5,At Risk
+CUST-0469,424,1,9980.0,1,1,3,5,At Risk
+CUST-0470,469,1,690.0,1,1,1,3,Lost / Inactive
+CUST-0471,131,6,8554.0,3,4,2,9,Loyal Customers
+CUST-0472,71,5,4224.0,4,3,2,9,Loyal Customers
+CUST-0473,185,5,19476.5,2,3,4,9,Loyal Customers
+CUST-0474,35,6,21045.5,4,4,4,12,Champions
+CUST-0475,341,5,13591.5,1,3,3,7,Potential Loyalists
+CUST-0476,43,2,486.0,4,1,1,6,Potential Loyalists
+CUST-0477,146,6,36809.5,3,4,4,11,Champions
+CUST-0478,82,4,16636.0,4,2,3,9,Loyal Customers
+CUST-0479,144,2,3060.0,3,1,1,5,At Risk
+CUST-0480,210,2,2380.0,2,1,1,4,At Risk
+CUST-0481,334,4,14581.0,1,2,3,6,Potential Loyalists
+CUST-0482,79,6,5995.0,4,4,2,10,Champions
+CUST-0483,292,3,1526.5,1,2,1,4,At Risk
+CUST-0484,177,5,11797.5,3,3,3,9,Loyal Customers
+CUST-0485,144,3,18755.0,3,2,3,8,Loyal Customers
+CUST-0486,278,6,12114.0,1,4,3,8,Loyal Customers
+CUST-0487,275,5,6744.5,1,3,2,6,Potential Loyalists
+CUST-0488,292,6,24034.0,1,4,4,9,Loyal Customers
+CUST-0489,425,4,4990.0,1,2,2,5,At Risk
+CUST-0490,340,1,114.0,1,1,1,3,Lost / Inactive
+CUST-0491,117,3,30015.5,3,2,4,9,Loyal Customers
+CUST-0492,249,5,12634.0,2,3,3,8,Loyal Customers
+CUST-0493,274,6,4336.5,1,4,2,7,Potential Loyalists
+CUST-0494,39,8,10292.0,4,4,3,11,Champions
+CUST-0495,24,4,7344.5,4,2,2,8,Loyal Customers
+CUST-0496,272,3,8293.0,1,2,2,5,At Risk
+CUST-0497,115,4,8851.0,3,2,3,8,Loyal Customers
+CUST-0498,301,8,10598.5,1,4,3,8,Loyal Customers
+CUST-0499,224,4,9071.5,2,2,3,7,Potential Loyalists
+CUST-0500,136,4,3865.5,3,2,1,6,Potential Loyalists
+CUST-0501,164,6,7589.0,3,4,2,9,Loyal Customers
+CUST-0502,272,3,6612.0,1,2,2,5,At Risk
+CUST-0503,114,5,18044.0,3,3,3,9,Loyal Customers
+CUST-0504,306,5,11203.0,1,3,3,7,Potential Loyalists
+CUST-0505,305,2,11850.0,1,1,3,5,At Risk
+CUST-0506,144,3,2499.5,3,2,1,6,Potential Loyalists
+CUST-0507,187,5,10716.5,2,3,3,8,Loyal Customers
+CUST-0508,193,5,19555.5,2,3,4,9,Loyal Customers
+CUST-0509,130,6,48226.0,3,4,4,11,Champions
+CUST-0510,351,6,40661.5,1,4,4,9,Loyal Customers
+CUST-0511,382,3,1915.5,1,2,1,4,At Risk
+CUST-0512,108,4,5697.5,3,2,2,7,Potential Loyalists
+CUST-0513,117,7,25792.0,3,4,4,11,Champions
+CUST-0514,268,4,1210.0,1,2,1,4,At Risk
+CUST-0515,58,7,75785.5,4,4,4,12,Champions
+CUST-0516,176,5,6960.5,3,3,2,8,Loyal Customers
+CUST-0517,71,5,27650.0,4,3,4,11,Champions
+CUST-0518,439,6,10452.5,1,4,3,8,Loyal Customers
+CUST-0519,39,4,6821.0,4,2,2,8,Loyal Customers
+CUST-0520,385,3,6916.0,1,2,2,5,At Risk
+CUST-0521,296,2,1947.5,1,1,1,3,Lost / Inactive
+CUST-0522,70,2,1305.0,4,1,1,6,Potential Loyalists
+CUST-0523,61,1,590.0,4,1,1,6,Potential Loyalists
+CUST-0524,237,4,6581.0,2,2,2,6,Potential Loyalists
+CUST-0525,102,4,8167.0,4,2,2,8,Loyal Customers
+CUST-0526,60,3,18707.0,4,2,3,9,Loyal Customers
+CUST-0527,136,4,15800.5,3,2,3,8,Loyal Customers
+CUST-0528,92,9,24886.0,4,4,4,12,Champions
+CUST-0529,243,5,3192.5,2,3,1,6,Potential Loyalists
+CUST-0530,259,2,18296.5,2,1,3,6,Potential Loyalists
+CUST-0531,312,5,22760.0,1,3,4,8,Loyal Customers
+CUST-0532,237,6,12168.5,2,4,3,9,Loyal Customers
+CUST-0533,200,2,7160.0,2,1,2,5,At Risk
+CUST-0534,106,5,7315.5,4,3,2,9,Loyal Customers
+CUST-0535,201,2,2483.0,2,1,1,4,At Risk
+CUST-0536,97,8,12770.5,4,4,3,11,Champions
+CUST-0537,195,8,8993.5,2,4,3,9,Loyal Customers
+CUST-0538,74,4,4370.5,4,2,2,8,Loyal Customers
+CUST-0539,88,5,2737.5,4,3,1,8,Loyal Customers
+CUST-0540,56,4,16430.0,4,2,3,9,Loyal Customers
+CUST-0542,239,3,10408.0,2,2,3,7,Potential Loyalists
+CUST-0543,125,3,7462.0,3,2,2,7,Potential Loyalists
+CUST-0544,269,2,1482.0,1,1,1,3,Lost / Inactive
+CUST-0545,193,4,8125.0,2,2,2,6,Potential Loyalists
+CUST-0546,291,4,3050.0,1,2,1,4,At Risk
+CUST-0547,318,3,20945.0,1,2,4,7,Potential Loyalists
+CUST-0548,302,7,49942.5,1,4,4,9,Loyal Customers
+CUST-0549,244,6,22085.5,2,4,4,10,Champions
+CUST-0550,77,3,6861.5,4,2,2,8,Loyal Customers
+CUST-0551,250,4,3320.0,2,2,1,5,At Risk
+CUST-0552,167,6,96565.0,3,4,4,11,Champions
+CUST-0553,275,2,4185.5,1,1,2,4,At Risk
+CUST-0554,142,4,5015.5,3,2,2,7,Potential Loyalists
+CUST-0555,182,6,22784.0,2,4,4,10,Champions
+CUST-0556,271,4,3866.0,1,2,1,4,At Risk
+CUST-0557,197,2,3285.5,2,1,1,4,At Risk
+CUST-0558,147,2,2070.0,3,1,1,5,At Risk
+CUST-0559,110,5,8006.5,3,3,2,8,Loyal Customers
+CUST-0560,134,6,7903.0,3,4,2,9,Loyal Customers
+CUST-0561,195,4,28050.0,2,2,4,8,Loyal Customers
+CUST-0562,57,5,22521.5,4,3,4,11,Champions
+CUST-0563,205,1,4740.5,2,1,2,5,At Risk
+CUST-0564,104,6,36468.0,4,4,4,12,Champions
+CUST-0565,307,2,18790.0,1,1,3,5,At Risk
+CUST-0566,374,3,22490.0,1,2,4,7,Potential Loyalists
+CUST-0567,130,6,8102.0,3,4,2,9,Loyal Customers
+CUST-0568,228,4,14911.5,2,2,3,7,Potential Loyalists
+CUST-0569,484,2,1781.0,1,1,1,3,Lost / Inactive
+CUST-0570,393,4,6860.5,1,2,2,5,At Risk
+CUST-0571,74,5,26988.5,4,3,4,11,Champions
+CUST-0572,71,6,12243.5,4,4,3,11,Champions
+CUST-0573,362,4,2897.5,1,2,1,4,At Risk
+CUST-0575,529,1,711.0,1,1,1,3,Lost / Inactive
+CUST-0576,163,8,6831.0,3,4,2,9,Loyal Customers
+CUST-0577,55,5,6921.0,4,3,2,9,Loyal Customers
+CUST-0578,149,4,22119.5,3,2,4,9,Loyal Customers
+CUST-0579,162,3,10612.0,3,2,3,8,Loyal Customers
+CUST-0580,65,5,8577.0,4,3,2,9,Loyal Customers
+CUST-0581,73,4,23818.0,4,2,4,10,Champions
+CUST-0582,88,3,1970.0,4,2,1,7,Potential Loyalists
+CUST-0583,152,1,18500.0,3,1,3,7,Potential Loyalists
+CUST-0584,38,8,6385.0,4,4,2,10,Champions
+CUST-0585,38,5,6421.0,4,3,2,9,Loyal Customers
+CUST-0586,219,4,6253.5,2,2,2,6,Potential Loyalists
+CUST-0587,186,4,42172.0,2,2,4,8,Loyal Customers
+CUST-0588,189,4,4521.0,2,2,2,6,Potential Loyalists
+CUST-0589,292,3,1570.0,1,2,1,4,At Risk
+CUST-0590,148,4,2610.5,3,2,1,6,Potential Loyalists
+CUST-0591,358,2,1426.5,1,1,1,3,Lost / Inactive
+CUST-0592,46,10,13401.5,4,4,3,11,Champions
+CUST-0593,241,6,45144.0,2,4,4,10,Champions
+CUST-0594,180,4,7970.5,2,2,2,6,Potential Loyalists
+CUST-0595,318,4,14563.0,1,2,3,6,Potential Loyalists
+CUST-0596,246,4,27266.0,2,2,4,8,Loyal Customers
+CUST-0597,300,4,17585.0,1,2,3,6,Potential Loyalists
+CUST-0598,65,5,6881.0,4,3,2,9,Loyal Customers
+CUST-0599,199,7,15401.0,2,4,3,9,Loyal Customers
+CUST-0600,308,1,1290.0,1,1,1,3,Lost / Inactive
+CUST-0601,188,8,13095.5,2,4,3,9,Loyal Customers
+CUST-0602,57,9,11740.5,4,4,3,11,Champions
+CUST-0603,231,4,6050.0,2,2,2,6,Potential Loyalists
+CUST-0604,22,1,108.0,4,1,1,6,Potential Loyalists
+CUST-0605,224,2,36075.0,2,1,4,7,Potential Loyalists
+CUST-0606,301,2,4536.5,1,1,2,4,At Risk
+CUST-0607,131,5,11843.0,3,3,3,9,Loyal Customers
+CUST-0608,172,3,3276.5,3,2,1,6,Potential Loyalists
+CUST-0609,165,6,13904.5,3,4,3,10,Champions
+CUST-0610,239,2,1462.0,2,1,1,4,At Risk
+CUST-0611,230,3,4322.0,2,2,2,6,Potential Loyalists
+CUST-0612,193,6,8438.0,2,4,2,8,Loyal Customers
+CUST-0613,199,4,38932.0,2,2,4,8,Loyal Customers
+CUST-0614,117,2,2005.5,3,1,1,5,At Risk
+CUST-0615,36,8,12385.5,4,4,3,11,Champions
+CUST-0616,177,5,22813.5,3,3,4,10,Champions
+CUST-0617,78,4,5261.0,4,2,2,8,Loyal Customers
+CUST-0618,98,5,15338.5,4,3,3,10,Champions
+CUST-0619,83,4,13459.0,4,2,3,9,Loyal Customers
+CUST-0620,34,7,8305.5,4,4,2,10,Champions
+CUST-0621,73,4,22691.5,4,2,4,10,Champions
+CUST-0622,232,3,2930.0,2,2,1,5,At Risk
+CUST-0623,403,1,315.0,1,1,1,3,Lost / Inactive
+CUST-0624,27,5,10399.5,4,3,3,10,Champions
+CUST-0625,388,2,3871.0,1,1,1,3,Lost / Inactive
+CUST-0626,207,6,9057.5,2,4,3,9,Loyal Customers
+CUST-0627,201,3,2602.0,2,2,1,5,At Risk
+CUST-0628,85,5,18056.5,4,3,3,10,Champions
+CUST-0629,148,4,18517.0,3,2,3,8,Loyal Customers
+CUST-0630,123,6,14109.0,3,4,3,10,Champions
+CUST-0631,28,4,4964.5,4,2,2,8,Loyal Customers
+CUST-0632,195,4,9460.0,2,2,3,7,Potential Loyalists
+CUST-0633,109,2,18890.0,3,1,3,7,Potential Loyalists
+CUST-0634,123,4,42971.5,3,2,4,9,Loyal Customers
+CUST-0635,91,6,44242.0,4,4,4,12,Champions
+CUST-0636,118,6,33118.5,3,4,4,11,Champions
+CUST-0637,536,1,450.0,1,1,1,3,Lost / Inactive
+CUST-0638,445,2,870.0,1,1,1,3,Lost / Inactive
+CUST-0639,138,6,15252.0,3,4,3,10,Champions
+CUST-0640,466,1,580.0,1,1,1,3,Lost / Inactive
+CUST-0641,126,2,5790.0,3,1,2,6,Potential Loyalists
+CUST-0642,153,3,2222.0,3,2,1,6,Potential Loyalists
+CUST-0643,174,2,2480.0,3,1,1,5,At Risk
+CUST-0644,99,2,5440.0,4,1,2,7,Potential Loyalists
+CUST-0645,44,7,51191.0,4,4,4,12,Champions
+CUST-0646,288,2,3012.0,1,1,1,3,Lost / Inactive
+CUST-0647,100,7,26898.5,4,4,4,12,Champions
+CUST-0648,281,5,15013.0,1,3,3,7,Potential Loyalists
+CUST-0649,196,2,4041.0,2,1,1,4,At Risk
+CUST-0650,45,7,14546.0,4,4,3,11,Champions
+CUST-0651,77,1,531.0,4,1,1,6,Potential Loyalists
+CUST-0652,407,3,2815.5,1,2,1,4,At Risk
+CUST-0653,228,3,3491.5,2,2,1,5,At Risk
+CUST-0654,157,5,9111.5,3,3,3,9,Loyal Customers
+CUST-0655,59,8,24406.0,4,4,4,12,Champions
+CUST-0656,150,4,3734.0,3,2,1,6,Potential Loyalists
+CUST-0657,322,4,2994.0,1,2,1,4,At Risk
+CUST-0658,232,8,7778.0,2,4,2,8,Loyal Customers
+CUST-0660,205,5,11094.5,2,3,3,8,Loyal Customers
+CUST-0661,323,7,10625.5,1,4,3,8,Loyal Customers
+CUST-0662,133,6,42960.0,3,4,4,11,Champions
+CUST-0663,181,3,4243.0,2,2,2,6,Potential Loyalists
+CUST-0664,325,5,20927.0,1,3,4,8,Loyal Customers
+CUST-0665,118,4,2435.0,3,2,1,6,Potential Loyalists
+CUST-0666,152,3,12886.5,3,2,3,8,Loyal Customers
+CUST-0667,304,4,9430.0,1,2,3,6,Potential Loyalists
+CUST-0668,270,2,1791.0,1,1,1,3,Lost / Inactive
+CUST-0669,134,4,11460.5,3,2,3,8,Loyal Customers
+CUST-0670,228,4,5353.0,2,2,2,6,Potential Loyalists
+CUST-0671,120,7,51373.0,3,4,4,11,Champions
+CUST-0672,116,5,15370.0,3,3,3,9,Loyal Customers
+CUST-0673,84,3,5299.5,4,2,2,8,Loyal Customers
+CUST-0674,219,6,4549.0,2,4,2,8,Loyal Customers
+CUST-0675,150,9,33073.5,3,4,4,11,Champions
+CUST-0676,88,7,7499.5,4,4,2,10,Champions
+CUST-0677,216,10,35113.5,2,4,4,10,Champions
+CUST-0679,88,2,1539.0,4,1,1,6,Potential Loyalists
+CUST-0680,229,3,6615.5,2,2,2,6,Potential Loyalists
+CUST-0681,312,2,4070.0,1,1,1,3,Lost / Inactive
+CUST-0682,97,7,6985.5,4,4,2,10,Champions
+CUST-0683,275,4,22035.5,1,2,4,7,Potential Loyalists
+CUST-0684,74,4,9121.0,4,2,3,9,Loyal Customers
+CUST-0685,440,1,590.0,1,1,1,3,Lost / Inactive
+CUST-0686,295,4,12640.0,1,2,3,6,Potential Loyalists
+CUST-0687,302,5,28064.0,1,3,4,8,Loyal Customers
+CUST-0688,147,4,12949.0,3,2,3,8,Loyal Customers
+CUST-0689,162,4,12155.5,3,2,3,8,Loyal Customers
+CUST-0690,396,2,74427.5,1,1,4,6,Potential Loyalists
+CUST-0691,310,2,19440.5,1,1,4,6,Potential Loyalists
+CUST-0692,138,2,1260.5,3,1,1,5,At Risk
+CUST-0693,406,2,4113.0,1,1,2,4,At Risk
+CUST-0694,63,8,7734.0,4,4,2,10,Champions
+CUST-0695,72,7,40313.0,4,4,4,12,Champions
+CUST-0696,45,6,4351.0,4,4,2,10,Champions
+CUST-0697,10,4,7357.5,4,2,2,8,Loyal Customers
+CUST-0698,257,5,21771.5,2,3,4,9,Loyal Customers
+CUST-0699,182,2,1730.0,2,1,1,4,At Risk
+CUST-0700,135,4,10965.0,3,2,3,8,Loyal Customers
+CUST-0701,325,4,8570.0,1,2,2,5,At Risk
+CUST-0702,132,6,5637.0,3,4,2,9,Loyal Customers
+CUST-0703,92,4,11493.5,4,2,3,9,Loyal Customers
+CUST-0704,127,5,5881.5,3,3,2,8,Loyal Customers
+CUST-0705,295,4,11571.0,1,2,3,6,Potential Loyalists
+CUST-0706,64,4,6322.0,4,2,2,8,Loyal Customers
+CUST-0707,298,6,9676.5,1,4,3,8,Loyal Customers
+CUST-0708,298,7,32065.0,1,4,4,9,Loyal Customers
+CUST-0709,222,7,18582.0,2,4,3,9,Loyal Customers
+CUST-0710,339,5,10348.5,1,3,3,7,Potential Loyalists
+CUST-0711,291,6,7385.5,1,4,2,7,Potential Loyalists
+CUST-0712,124,6,16790.0,3,4,3,10,Champions
+CUST-0713,228,3,8581.0,2,2,2,6,Potential Loyalists
+CUST-0714,130,7,14615.5,3,4,3,10,Champions
+CUST-0715,95,7,9442.5,4,4,3,11,Champions
+CUST-0716,323,4,5752.0,1,2,2,5,At Risk
+CUST-0717,252,3,2123.5,2,2,1,5,At Risk
+CUST-0718,233,5,24251.0,2,3,4,9,Loyal Customers
+CUST-0719,183,8,64361.0,2,4,4,10,Champions
+CUST-0720,612,1,2890.0,1,1,1,3,Lost / Inactive
+CUST-0721,213,6,26306.5,2,4,4,10,Champions
+CUST-0722,215,4,8406.0,2,2,2,6,Potential Loyalists
+CUST-0723,297,1,2622.0,1,1,1,3,Lost / Inactive
+CUST-0724,476,2,1656.0,1,1,1,3,Lost / Inactive
+CUST-0725,192,4,3242.0,2,2,1,5,At Risk
+CUST-0726,178,2,6310.0,2,1,2,5,At Risk
+CUST-0727,169,5,7246.5,3,3,2,8,Loyal Customers
+CUST-0728,289,4,10213.5,1,2,3,6,Potential Loyalists
+CUST-0729,192,3,6430.5,2,2,2,6,Potential Loyalists
+CUST-0730,170,7,6282.0,3,4,2,9,Loyal Customers
+CUST-0731,227,2,2986.5,2,1,1,4,At Risk
+CUST-0732,250,4,9120.0,2,2,3,7,Potential Loyalists
+CUST-0733,126,5,3860.0,3,3,1,7,Potential Loyalists
+CUST-0734,201,4,3430.0,2,2,1,5,At Risk
+CUST-0735,44,7,40074.0,4,4,4,12,Champions
+CUST-0736,342,2,2540.0,1,1,1,3,Lost / Inactive
+CUST-0737,133,3,16209.5,3,2,3,8,Loyal Customers
+CUST-0738,249,2,8661.5,2,1,3,6,Potential Loyalists
+CUST-0739,256,3,4187.5,2,2,2,6,Potential Loyalists
+CUST-0740,248,6,29589.0,2,4,4,10,Champions
+CUST-0741,399,2,7507.5,1,1,2,4,At Risk
+CUST-0742,185,6,17053.5,2,4,3,9,Loyal Customers
+CUST-0743,135,7,22266.5,3,4,4,11,Champions
+CUST-0744,220,6,8504.5,2,4,2,8,Loyal Customers
+CUST-0745,58,7,11776.0,4,4,3,11,Champions
+CUST-0746,100,4,19302.0,4,2,4,10,Champions
+CUST-0747,100,4,4366.5,4,2,2,8,Loyal Customers
+CUST-0748,410,4,4153.5,1,2,2,5,At Risk
+CUST-0749,84,4,3980.0,4,2,1,7,Potential Loyalists
+CUST-0750,369,2,4291.0,1,1,2,4,At Risk
+CUST-0751,31,10,36382.5,4,4,4,12,Champions
+CUST-0752,258,3,4463.0,2,2,2,6,Potential Loyalists
+CUST-0753,106,4,5547.5,4,2,2,8,Loyal Customers
+CUST-0754,28,7,12538.5,4,4,3,11,Champions
+CUST-0755,147,2,14460.0,3,1,3,7,Potential Loyalists
+CUST-0756,232,6,46733.0,2,4,4,10,Champions
+CUST-0757,156,4,16807.5,3,3,3,9,Loyal Customers
+CUST-0758,174,5,40370.0,3,3,4,10,Champions
+CUST-0759,7,5,6116.5,4,3,2,9,Loyal Customers
+CUST-0760,31,4,3957.5,4,3,1,8,Loyal Customers
+CUST-0761,182,7,72510.5,2,4,4,10,Champions
+CUST-0762,244,3,37940.0,2,2,4,8,Loyal Customers
+CUST-0763,181,3,20970.0,2,2,4,8,Loyal Customers
+CUST-0764,187,5,45703.5,2,3,4,9,Loyal Customers
+CUST-0765,131,6,5066.5,3,4,2,9,Loyal Customers
+CUST-0766,130,7,3695.5,3,4,1,8,Loyal Customers
+CUST-0767,303,3,4846.5,1,2,2,5,At Risk
+CUST-0768,439,3,5091.5,1,2,2,5,At Risk
+CUST-0769,235,7,45200.0,2,4,4,10,Champions
+CUST-0770,208,7,8671.0,2,4,3,9,Loyal Customers
+CUST-0771,128,8,24563.0,3,4,4,11,Champions
+CUST-0772,65,6,54405.5,4,4,4,12,Champions
+CUST-0773,141,1,8010.0,3,1,2,6,Potential Loyalists
+CUST-0774,267,3,2243.0,1,2,1,4,At Risk
+CUST-0775,256,3,1642.5,2,2,1,5,At Risk
+CUST-0776,81,8,14669.5,4,4,3,11,Champions
+CUST-0778,104,5,44995.0,4,3,4,11,Champions
+CUST-0779,407,1,2370.0,1,1,1,3,Lost / Inactive
+CUST-0780,229,3,2441.5,2,2,1,5,At Risk
+CUST-0781,266,6,11370.0,1,4,3,8,Loyal Customers
+CUST-0782,112,9,68502.5,3,4,4,11,Champions
+CUST-0783,35,6,12043.0,4,4,3,11,Champions
+CUST-0784,170,5,12293.0,3,3,3,9,Loyal Customers
+CUST-0785,130,7,39831.0,3,4,4,11,Champions
+CUST-0786,142,3,2435.5,3,2,1,6,Potential Loyalists
+CUST-0787,143,6,37429.5,3,4,4,11,Champions
+CUST-0788,117,5,11233.0,3,3,3,9,Loyal Customers
+CUST-0789,262,6,27756.0,1,4,4,9,Loyal Customers
+CUST-0790,163,5,8170.5,3,3,2,8,Loyal Customers
+CUST-0791,466,2,5871.0,1,1,2,4,At Risk
+CUST-0792,369,4,3942.5,1,3,1,5,At Risk
+CUST-0793,77,2,2570.0,4,1,1,6,Potential Loyalists
+CUST-0794,136,5,7838.5,3,3,2,8,Loyal Customers
+CUST-0795,41,4,4533.5,4,3,2,9,Loyal Customers
+CUST-0796,89,4,9014.0,4,3,3,10,Champions
+CUST-0797,233,2,902.0,2,1,1,4,At Risk
+CUST-0798,206,5,10524.0,2,3,3,8,Loyal Customers
+CUST-0799,109,2,7471.0,3,1,2,6,Potential Loyalists
+CUST-0800,609,1,350.0,1,1,1,3,Lost / Inactive
+CUST-0801,168,5,2581.0,3,3,1,7,Potential Loyalists
+CUST-0802,43,6,34534.5,4,4,4,12,Champions
+CUST-0803,358,4,2262.0,1,3,1,5,At Risk
+CUST-0804,227,5,12481.0,2,3,3,8,Loyal Customers
+CUST-0805,188,5,35584.5,2,3,4,9,Loyal Customers
+CUST-0806,217,4,12287.5,2,3,3,8,Loyal Customers
+CUST-0807,165,4,11551.0,3,3,3,9,Loyal Customers
+CUST-0808,77,2,1611.0,4,1,1,6,Potential Loyalists
+CUST-0809,199,6,4664.0,2,4,2,8,Loyal Customers
+CUST-0810,179,3,8668.0,2,2,3,7,Potential Loyalists
+CUST-0811,155,8,49032.0,3,4,4,11,Champions
+CUST-0812,237,7,42711.0,2,4,4,10,Champions
+CUST-0813,225,3,16221.0,2,2,3,7,Potential Loyalists
+CUST-0814,129,4,7812.0,3,3,2,8,Loyal Customers
+CUST-0815,190,4,14430.0,2,3,3,8,Loyal Customers
+CUST-0816,184,4,6772.0,2,3,2,7,Potential Loyalists
+CUST-0817,206,3,12025.0,2,2,3,7,Potential Loyalists
+CUST-0818,168,3,7449.5,3,2,2,7,Potential Loyalists
+CUST-0819,24,7,4991.0,4,4,2,10,Champions
+CUST-0820,402,3,4086.0,1,2,1,4,At Risk
+CUST-0821,172,5,11995.5,3,3,3,9,Loyal Customers
+CUST-0822,215,3,2470.0,2,2,1,5,At Risk
+CUST-0823,232,2,19065.0,2,1,4,7,Potential Loyalists
+CUST-0824,156,4,3572.0,3,3,1,7,Potential Loyalists
+CUST-0825,198,3,20885.0,2,2,4,8,Loyal Customers
+CUST-0826,218,3,24480.0,2,2,4,8,Loyal Customers
+CUST-0827,481,6,6500.0,1,4,2,7,Potential Loyalists
+CUST-0828,156,7,27634.5,3,4,4,11,Champions
+CUST-0829,286,3,5590.0,1,2,2,5,At Risk
+CUST-0830,213,3,4350.5,2,2,2,6,Potential Loyalists
+CUST-0831,194,3,5997.5,2,2,2,6,Potential Loyalists
+CUST-0832,50,1,450.0,4,1,1,6,Potential Loyalists
+CUST-0833,85,4,10920.5,4,3,3,10,Champions
+CUST-0834,250,4,4052.0,2,3,1,6,Potential Loyalists
+CUST-0835,190,2,1956.5,2,1,1,4,At Risk
+CUST-0836,253,4,24544.5,2,3,4,9,Loyal Customers
+CUST-0837,114,6,10411.0,3,4,3,10,Champions
+CUST-0838,464,2,4311.0,1,1,2,4,At Risk
+CUST-0839,178,5,9057.5,2,3,3,8,Loyal Customers
+CUST-0840,100,8,15241.0,4,4,3,11,Champions
+CUST-0841,407,4,5348.5,1,3,2,6,Potential Loyalists
+CUST-0842,285,6,14091.5,1,4,3,8,Loyal Customers
+CUST-0843,45,6,12165.5,4,4,3,11,Champions
+CUST-0844,191,8,9430.0,2,4,3,9,Loyal Customers
+CUST-0845,84,3,2855.5,4,2,1,7,Potential Loyalists
+CUST-0846,177,6,15465.5,3,4,3,10,Champions
+CUST-0847,351,3,24455.0,1,2,4,7,Potential Loyalists
+CUST-0848,167,4,2990.0,3,3,1,7,Potential Loyalists
+CUST-0849,114,5,18311.0,3,3,3,9,Loyal Customers
+CUST-0850,135,2,15860.0,3,1,3,7,Potential Loyalists
+CUST-0851,263,4,7064.5,1,3,2,6,Potential Loyalists
+CUST-0852,115,4,15710.5,3,3,3,9,Loyal Customers
+CUST-0853,237,5,7235.5,2,3,2,7,Potential Loyalists
+CUST-0855,172,6,19115.0,3,4,4,11,Champions
+CUST-0856,376,4,21318.5,1,3,4,8,Loyal Customers
+CUST-0857,86,5,3506.0,4,3,1,8,Loyal Customers
+CUST-0858,167,4,13182.0,3,3,3,9,Loyal Customers
+CUST-0859,160,4,8026.5,3,3,2,8,Loyal Customers
+CUST-0860,108,6,22271.0,3,4,4,11,Champions
+CUST-0861,247,5,11981.0,2,3,3,8,Loyal Customers
+CUST-0862,59,7,29657.5,4,4,4,12,Champions
+CUST-0863,353,2,371.0,1,1,1,3,Lost / Inactive
+CUST-0864,70,3,6150.5,4,2,2,8,Loyal Customers
+CUST-0865,506,2,1032.5,1,1,1,3,Lost / Inactive
+CUST-0866,507,1,332.5,1,1,1,3,Lost / Inactive
+CUST-0867,442,3,9191.0,1,2,3,6,Potential Loyalists
+CUST-0868,113,5,9225.5,3,3,3,9,Loyal Customers
+CUST-0869,65,5,2546.0,4,3,1,8,Loyal Customers
+CUST-0870,177,4,5691.0,3,3,2,8,Loyal Customers
+CUST-0871,54,5,5378.5,4,3,2,9,Loyal Customers
+CUST-0872,144,7,12953.5,3,4,3,10,Champions
+CUST-0873,128,7,26033.0,3,4,4,11,Champions
+CUST-0874,261,3,6628.0,2,2,2,6,Potential Loyalists
+CUST-0875,155,3,4625.5,3,2,2,7,Potential Loyalists
+CUST-0876,59,5,31097.5,4,3,4,11,Champions
+CUST-0877,164,3,4704.5,3,2,2,7,Potential Loyalists
+CUST-0878,431,4,9785.5,1,3,3,7,Potential Loyalists
+CUST-0879,182,3,2803.5,2,2,1,5,At Risk
+CUST-0880,73,5,23200.0,4,3,4,11,Champions
+CUST-0881,388,2,2877.5,1,1,1,3,Lost / Inactive
+CUST-0882,187,4,7870.0,2,3,2,7,Potential Loyalists
+CUST-0883,72,4,5748.0,4,3,2,9,Loyal Customers
+CUST-0884,98,2,710.0,4,1,1,6,Potential Loyalists
+CUST-0885,158,3,1312.5,3,2,1,6,Potential Loyalists
+CUST-0886,531,2,12491.0,1,1,3,5,At Risk
+CUST-0887,94,6,14903.0,4,4,3,11,Champions
+CUST-0888,33,5,5606.5,4,3,2,9,Loyal Customers
+CUST-0889,204,5,25715.5,2,3,4,9,Loyal Customers
+CUST-0890,238,6,7514.0,2,4,2,8,Loyal Customers
+CUST-0891,52,7,12717.5,4,4,3,11,Champions
+CUST-0892,447,4,19005.0,1,3,4,8,Loyal Customers
+CUST-0893,167,4,4370.0,3,3,2,8,Loyal Customers
+CUST-0894,520,3,23860.0,1,2,4,7,Potential Loyalists
+CUST-0895,77,3,41207.5,4,2,4,10,Champions
+CUST-0896,206,5,9876.0,2,3,3,8,Loyal Customers
+CUST-0897,182,2,1386.5,2,1,1,4,At Risk
+CUST-0898,65,7,17414.0,4,4,3,11,Champions
+CUST-0899,152,2,3936.5,3,1,1,5,At Risk
+CUST-0900,296,2,23870.0,1,1,4,6,Potential Loyalists
+CUST-0901,177,5,8754.0,3,3,3,9,Loyal Customers
+CUST-0902,202,2,10852.5,2,1,3,6,Potential Loyalists
+CUST-0903,119,6,8976.5,3,4,3,10,Champions
+CUST-0904,71,6,12714.0,4,4,3,11,Champions
+CUST-0905,69,6,31343.0,4,4,4,12,Champions
+CUST-0906,390,2,2640.5,1,1,1,3,Lost / Inactive
+CUST-0907,521,2,1531.5,1,1,1,3,Lost / Inactive
+CUST-0909,100,7,23305.5,4,4,4,12,Champions
+CUST-0910,187,3,23811.5,2,2,4,8,Loyal Customers
+CUST-0911,251,3,1916.0,2,2,1,5,At Risk
+CUST-0912,81,4,6785.5,4,3,2,9,Loyal Customers
+CUST-0913,209,6,5851.0,2,4,2,8,Loyal Customers
+CUST-0914,200,5,7266.5,2,3,2,7,Potential Loyalists
+CUST-0915,370,4,7461.0,1,3,2,6,Potential Loyalists
+CUST-0916,293,2,3136.5,1,1,1,3,Lost / Inactive
+CUST-0917,181,4,5633.5,2,3,2,7,Potential Loyalists
+CUST-0918,29,6,23972.5,4,4,4,12,Champions
+CUST-0919,100,9,32696.5,4,4,4,12,Champions
+CUST-0920,96,7,90030.0,4,4,4,12,Champions
+CUST-0921,124,4,11506.0,3,3,3,9,Loyal Customers
+CUST-0922,169,10,48495.0,3,4,4,11,Champions
+CUST-0923,509,2,1641.0,1,1,1,3,Lost / Inactive
+CUST-0924,148,3,3656.5,3,2,1,6,Potential Loyalists
+CUST-0925,98,6,28011.5,4,4,4,12,Champions
+CUST-0926,280,3,6966.0,1,2,2,5,At Risk
+CUST-0927,148,2,592.0,3,1,1,5,At Risk
+CUST-0929,322,3,1900.0,1,2,1,4,At Risk
+CUST-0930,249,5,10078.0,2,3,3,8,Loyal Customers
+CUST-0931,175,9,35632.0,3,4,4,11,Champions
+CUST-0932,55,4,18140.0,4,3,3,10,Champions
+CUST-0933,31,6,8384.0,4,4,2,10,Champions
+CUST-0934,203,4,7865.5,2,3,2,7,Potential Loyalists
+CUST-0935,91,5,5541.0,4,3,2,9,Loyal Customers
+CUST-0936,133,4,2861.0,3,3,1,7,Potential Loyalists
+CUST-0937,37,5,10461.0,4,3,3,10,Champions
+CUST-0938,235,2,2391.5,2,1,1,4,At Risk
+CUST-0939,284,4,3468.0,1,3,1,5,At Risk
+CUST-0940,247,8,18514.0,2,4,3,9,Loyal Customers
+CUST-0941,111,6,15183.0,3,4,3,10,Champions
+CUST-0942,383,2,18850.0,1,1,3,5,At Risk
+CUST-0943,207,5,31707.0,2,3,4,9,Loyal Customers
+CUST-0944,114,7,17742.0,3,4,3,10,Champions
+CUST-0945,270,5,8231.5,1,3,2,6,Potential Loyalists
+CUST-0946,351,3,9335.5,1,2,3,6,Potential Loyalists
+CUST-0947,210,4,22337.0,2,3,4,9,Loyal Customers
+CUST-0948,122,4,8859.0,3,3,3,9,Loyal Customers
+CUST-0949,175,10,24889.5,3,4,4,11,Champions
+CUST-0950,59,4,3054.5,4,3,1,8,Loyal Customers
